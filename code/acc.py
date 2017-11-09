@@ -4,7 +4,7 @@ import pygame
 adxl345 = ADXL345()
     
 #def afficheAcc():
-i = 0
+listesons=["./../son/b1.wav","./../son/b2.wav","./../son/b3.wav","./../son/b4.wav","./../son/b5.wav","./../son/b6.wav","./../son/b7.wav","./../son/b8.wav","./../son/b9.wav","./../son/b10.wav"]
 pygame.init()
 
 drum1 = pygame.mixer.Sound("drum1.mp3")
