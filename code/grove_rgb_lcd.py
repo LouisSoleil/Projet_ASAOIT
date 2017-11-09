@@ -73,10 +73,17 @@ def setText_norefresh(text):
         count += 1
         bus.write_byte_data(DISPLAY_TEXT_ADDR,0x40,ord(c))
 
-def resetEcran() : 
-	textCommand(0x01)
-	time.sleep(.5)
-	textCommand(0x08 | 0x04)
-	textCommand (0x28)
-	time.sleep(.5)
-	
+# example code
+if __name__=="__main__":
+    setText("Hello world\nThis is an LCD test")
+    setRGB(0,128,64)
+    time.sleep(2)
+    for c in range(0,255):
+        setText_norefresh("Going to sleep in {}...".format(str(c)))
+        setRGB(c,255-c,0)
+        time.sleep(0.1)
+    setRGB(0,255,0)
+    setText("Bye bye, this should wrap onto next line")
+
+
+setText("Louis le BG")

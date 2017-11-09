@@ -5,14 +5,11 @@ from grovepi import *
 led = 2
 
 pinMode(led,"OUTPUT")
-time.sleep(1)
 
+def allumeB():
+	digitalWrite(led,1)
+    	time.sleep(0.4)
 
-
-def continueB():
-    test = True
-    while test : 
-        digitalWrite(led,1)
-        time.sleep(1)
-        if button() == 1 :
-            test = False
+def eteindB():
+	digitalWrite(led,0)
+	time.sleep(0.4)
