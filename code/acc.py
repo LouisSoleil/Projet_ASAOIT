@@ -12,9 +12,9 @@ def afficheAcc(x):
 	fin = False
 # On initialise la banque de son
 	jouer = []
-	guitare = ["./../son/guitare/guitare1.wav","./../son/guitare/guitare2.wav","./../son/guitare/guitare3.wav","./../son/guitare/guitare4.wav","./../son/guitare/guitare5.wav","./../son/guitare/guitare6.wav","./../son/guitare/guitare7.wav","./../son/guitare/guitare8.wav","./../son/guitare/guitare9.wav","./../son/guitare/guitare10.wav","./../son/guitare/guitare11.wav"]
-	piano = ["./../son/piano/piano1.wav","./../son/piano/piano2.wav","./../son/piano/piano3.wav","./../son/piano/piano4.wav","./../son/piano/piano5.wav","./../son/piano/piano6.wav","./../son/piano/piano7.wav","./../son/piano/piano8.wav","./../son/piano/piano9.wav","./../son/piano/piano10.wav","./../son/piano/piano11.wav"]
-	batterie=["./../son/b1.wav","./../son/b2.wav","./../son/b3.wav","./../son/b4.wav","./../son/b5.wav","./../son/b6.wav","./../son/b7.wav","./../son/b8.wav","./../son/b9.wav","./../son/b10.wav","./../son/b11.wav","./../son/b12.wav"]
+	guitare = ["/home/pi/son/guitare/guitare1.wav","/home/pi/son/guitare/guitare2.wav","/home/pi/son/guitare/guitare3.wav","/home/pi/son/guitare/guitare4.wav","/home/pi/son/guitare/guitare5.wav","/home/pi/son/guitare/guitare6.wav","/home/pi/son/guitare/guitare7.wav","/home/pi/son/guitare/guitare8.wav","/home/pi/son/guitare/guitare9.wav","/home/pi/son/guitare/guitare10.wav","/home/pi/son/guitare/guitare11.wav"]
+	piano = ["/home/pi/son/piano/piano1.wav","/home/pi/son/piano/piano2.wav","/home/pi/son/piano/piano3.wav","/home/pi/son/piano/piano4.wav","/home/pi/son/piano/piano5.wav","/home/pi/son/piano/piano6.wav","/home/pi/son/piano/piano7.wav","/home/pi/son/piano/piano8.wav","/home/pi/son/piano/piano9.wav","/home/pi/son/piano/piano10.wav","/home/pi/son/piano/piano11.wav"]
+	batterie=["/home/pi/son/b1.wav","/home/pi/son/b2.wav","/home/pi/son/b3.wav","/home/pi/son/b4.wav","/home/pi/son/b5.wav","/home/pi/son/b6.wav","/home/pi/son/b7.wav","/home/pi/son/b8.wav","/home/pi/son/b9.wav","/home/pi/son/b10.wav","/home/pi/son/b11.wav","/home/pi/son/b12.wav"]
 	pygame.init()
 	a = 0
 # En fonction de la valeur de x 

@@ -27,7 +27,7 @@ def affichageInstru() :
 	time.sleep(0.3)
 	bouton = False
 	ecran.setText_norefresh("Choississez votre instrument")
-	time.sleep(1)
+	time.sleep(2)
 	ecran.resetEcran()
 	time.sleep(.5)
 	while test :

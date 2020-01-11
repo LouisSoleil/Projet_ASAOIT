@@ -38,8 +38,10 @@ def recommencer() :
 #ceci est le vrai main
 
 boucle = True 
-while boucle : #cette boucle permet d'attendre que l'utilisateur appuie bien sur le bouton pour commencer et pour que le programme ne s'arrete pas avant 
+while boucle : #cette boucle permet d'attendre que l'utilisateur appuie bien sur le bouton pour commencer et pour que le programme ne s'arrete pas avant
+	blueLED.allumeB() #on allume la led pour indiquer a l'utilisateur qu'il peut comment a utiliser l'appareil 
 	if grovepi.digitalRead(button) == 1 :
+		blueLED.eteindB()
 		ecran.setRGB(0,250,130)
 		time.sleep(.2)
 		ecran.setText_norefresh("Welcome to \nAIR DJ !! ")
